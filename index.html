@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="faysal_favicon_js.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to JavaScript Assignment Page - MD FAYSAL SHAHAD</h1>
+    </header>
+
+    <main class="container">
+      <section id="form-section">
+        <h2>Contact Us</h2>
+        <form id="myForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <span class="error-message" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <span class="error-message" id="email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
+            <span class="error-message" id="phone-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required />
+            <span class="error-message" id="address-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <span class="error-message" id="password-error"></span>
+          </div>
+
+          <button type="submit" id="submitBtn">Submit</button>
+        </form>
+        <div id="form-status" style="display: none">
+          <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+          </div>
+          <p id="status-message"></p>
+        </div>
+      </section>
+      <section id="banner-slider">
+        <h2>Image Gallery</h2>
+        <div class="slider-container">
+          <div class="slide-number"></div>
+          <div class="slider-main-image">
+            <img
+              src="https://via.placeholder.com/800x400?text=Slide+1"
+              alt="Slide 1"
+            />
+          </div>
+          <div class="slider-nav">
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+          </div>
+          <div class="slider-thumbnails">
+            <img
+              src="https://via.placeholder.com/100x70?text=Thumb+1"
+              alt="Thumb 1"
+              class="thumbnail active"
+            />
+            <img
+              src="https://via.placeholder.com/100x70?text=Thumb+2"
+              alt="Thumb 2"
+              class="thumbnail"
+            />
+            <img
+              src="https://via.placeholder.com/100x70?text=Thumb+3"
+              alt="Thumb 3"
+              class="thumbnail"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; MD FAYSAL SHAHAD. 2025 JavaScript Assignment. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
